@@ -1,0 +1,12 @@
+fun main() {
+        try {
+            for (i in 30 downTo 0) {
+                println(i)
+                Thread.sleep(1000)
+            }
+            println("BOOM!")
+        } catch (e: InterruptedException) {
+            println("Contagem interrompida: ${e.message}")
+            Thread.currentThread().interrupt() 
+        }
+    }
