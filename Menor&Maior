@@ -1,0 +1,18 @@
+fun main() {
+    print("Digite o primeiro número (menor): ")
+    val num1 = readLine()!!.toInt()
+
+    print("Digite o segundo número (maior): ")
+    val num2 = readLine()!!.toInt()
+
+    var som = 0
+    var quant = 0
+
+    for (i in num1..num2) {
+        som += i
+        quant++
+    }
+
+    val media = som.toDouble() / quant
+    println("A média aritmética entre $num1 e $num2 é: $media")
+}
