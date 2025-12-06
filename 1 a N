@@ -1,0 +1,9 @@
+fun main() {
+    print("Digite um número maior que zero: ")
+    val N = readLine()!!.toInt()
+
+    for (i in 1..N) {
+        println(i)
+    }
+
+   
