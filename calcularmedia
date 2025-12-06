@@ -1,0 +1,13 @@
+
+fun main() {
+    var som = 0
+    var quat = 0
+
+    for (i in 15..100) {
+        som += i
+        quat++
+    }
+
+    val media = som.toDouble() / quat
+    println("A média aritmética dos números de 15 a 100 é: $media")
+}
