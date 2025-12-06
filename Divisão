@@ -1,0 +1,13 @@
+fun main() {
+    print("Digite o primeiro valor: ")
+    val valor1 = readLine()!!.toDouble()
+
+    var valor2: Double
+    do {
+        print("Digite o segundo valor (não pode ser zero ou negativo): ")
+        valor2 = readLine()!!.toDouble()
+    } while (valor2 <= 0)
+
+    val resultado = valor1 / valor2
+    println("O resultado da divisão é: $resultado")
+}
